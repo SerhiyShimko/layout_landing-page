@@ -1,0 +1,35 @@
+.header {
+  background-image: url('./images/Image-2x.png');
+  background-size: cover;
+  background-position: center;
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+
+  &__title {
+    color: white;
+    font-size: 36px;
+    line-height: 100%;
+    font-style: bold;
+    letter-spacing: 0;
+
+    @include onTablet {
+      font-size: 40px;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+}
+
