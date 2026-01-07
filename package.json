@@ -638,6 +638,7 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
+    "@mate-academy/eslint-config": "^0.0.29",
     "@parcel/transformer-sass": "^2.16.3",
     "lightningcss": "^1.30.2",
     "mocha": "^10.7.0",
