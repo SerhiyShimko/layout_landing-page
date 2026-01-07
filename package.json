@@ -644,8 +644,10 @@
     "parcel": "^2.16.3"
   },
   "scripts": {
-    "test": "npm run lint && npm run test:only",
-    "start": "parcel ./src/index.html --open"
+    "start": "parcel src/index.html",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "test:only": "mocha \"{src,test}/**/*.{test,spec}.js\"",
+    "test": "npm run lint && npm run test:only"
   },
   "keywords": [],
   "author": "",
