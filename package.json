@@ -11,7 +11,7 @@
     "lint": "npm run style-format && npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
-    "deploy": "vite build --out-dir dist --base=/layout_landing-page/ --logLevel info",
+    "deploy": "vite build --out-dir dist --base=/layout_landing-page/",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
