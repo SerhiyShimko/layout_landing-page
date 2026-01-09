@@ -1,34 +1,31 @@
 .about-us {
-  background-color: #FCFAEF;
+  background-color: #fcfaef;
 
   &__photo {
+    position: relative;
     height: 200px;
     background-image: url('./images/abou-us-4x.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     left: 0;
     right: 0;
 
-    @include onTablet {
+    @include on-tablet {
       height: 400px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       height: 460px;
     }
   }
 
-
-
   &__content {
-
-    @include pageGrid();
+    @include page-grid;
 
     padding-block: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       padding-block: 120px;
     }
   }
@@ -37,11 +34,11 @@
     margin: 0;
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1 / 7;
     }
   }
@@ -54,13 +51,12 @@
     font-weight: 400;
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4 / -1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 8 / -1;
     }
   }
-
 }

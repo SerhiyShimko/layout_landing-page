@@ -3,26 +3,25 @@
     display: grid;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 56px;
     }
   }
-
 }
 
 .category {
   &__photo {
-    @include pageGrid();
+    @include page-grid;
   }
 
   &__link {
     width: 100%;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 6;
     }
   }
@@ -33,11 +32,11 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
 
-    @include onTablet {
+    @include on-tablet {
       aspect-ratio: auto;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       aspect-ratio: auto;
     }
   }
@@ -47,4 +46,3 @@
     margin-top: 16px;
   }
 }
-

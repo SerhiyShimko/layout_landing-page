@@ -1,7 +1,5 @@
-
-
 @import 'styles/utils/variables';
-@import '../src/styles/utils/mixins.scss';
+@import '../src/styles/utils/mixins';
 @import 'styles/blocks/page';
 @import 'styles/blocks/header';
 @import 'styles/blocks/top-bar';
@@ -16,4 +14,3 @@
 @import 'styles/blocks/categories';
 @import 'styles/blocks/button';
 @import 'styles/blocks/contact-us';
-

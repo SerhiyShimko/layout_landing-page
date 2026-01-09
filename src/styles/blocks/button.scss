@@ -2,9 +2,9 @@
   box-sizing: border-box;
   height: 56px;
 
-  @include pageGrid();
+  @include page-grid;
 
-  background-color: #F98921;
+  background-color: #f98921;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
 
   &__text {
     font-weight: 700;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
   }
 
@@ -22,13 +22,13 @@
     margin-bottom: 96px;
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 56px;
       margin-bottom: 232px;
       grid-column: span 6;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       margin-top: 56px;
       margin-bottom: 120px;
       grid-column: span 3;
@@ -42,7 +42,7 @@
   }
 
   &:hover {
-    background-color: #1B2129;
+    background-color: #1b2129;
   }
 
   &:active {

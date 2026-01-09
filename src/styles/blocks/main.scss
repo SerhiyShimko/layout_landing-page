@@ -1,10 +1,11 @@
 .main {
-  background-color: white;
+  background-color: #fff;
+
   &__content {
     display: grid;
     row-gap: 48px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 120px;
     }
   }
