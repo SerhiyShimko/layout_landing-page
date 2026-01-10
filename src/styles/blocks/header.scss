@@ -1,7 +1,7 @@
 .header {
   background-image: url('/src/images/Image-2x.png');
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 
   &__content {
     display: flex;
@@ -11,10 +11,10 @@
   }
 
   &__title {
-    color: #fff;
     font-size: 36px;
-    line-height: 100%;
     font-style: bold;
+    line-height: 100%;
+    color: #fff;
     letter-spacing: 0;
 
     @include on-tablet {

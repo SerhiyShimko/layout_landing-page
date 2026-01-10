@@ -1,16 +1,18 @@
 .button {
   &__categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     box-sizing: border-box;
     height: 56px;
-
-    @include page-grid;
+    border-radius: 8px;
 
     background-color: #f98921;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     transition: background-color 0.3s ease;
+
+    @include page-grid;
 
     &:hover {
     background-color: #1b2129;
@@ -28,20 +30,20 @@
   }
 
   &--indents {
+    grid-column: span 2;
     margin-top: 40px;
     margin-bottom: 96px;
-    grid-column: span 2;
 
     @include on-tablet {
+      grid-column: span 6;
       margin-top: 56px;
       margin-bottom: 232px;
-      grid-column: span 6;
     }
 
     @include on-desktop {
+      grid-column: span 3;
       margin-top: 56px;
       margin-bottom: 120px;
-      grid-column: span 3;
     }
   }
 
