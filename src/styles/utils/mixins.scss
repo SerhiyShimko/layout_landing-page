@@ -49,3 +49,14 @@
     grid-template-columns: repeat(12, 1fr);
   }
 }
+
+@mixin guidance {
+  &:hover {
+      border: 1px solid #DBDBDB;
+    }
+
+  &:focus {
+    border: 2px solid #F98921;
+    outline: none;
+  }
+}

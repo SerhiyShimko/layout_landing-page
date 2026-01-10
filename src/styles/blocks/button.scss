@@ -2,15 +2,23 @@
   &__categories {
     box-sizing: border-box;
     height: 56px;
-    
+
     @include page-grid;
-    
+
     background-color: #f98921;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
+
+    &:hover {
+    background-color: #1b2129;
+    }
+
+    &:active {
+      background-color: #010810;
+    }
   }
 
   &__text {
@@ -43,11 +51,5 @@
     text-decoration: none;
   }
 
-  &:hover {
-    background-color: #1b2129;
-  }
 
-  &:active {
-    background-color: #010810;
-  }
 }
