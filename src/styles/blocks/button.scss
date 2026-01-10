@@ -1,15 +1,17 @@
 .button {
-  box-sizing: border-box;
-  height: 56px;
-
-  @include page-grid;
-
-  background-color: #f98921;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
+  &__categories {
+    box-sizing: border-box;
+    height: 56px;
+    
+    @include page-grid;
+    
+    background-color: #f98921;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
 
   &__text {
     font-weight: 700;

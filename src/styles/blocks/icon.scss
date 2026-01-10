@@ -13,15 +13,15 @@
   }
 
   &--phone {
-    background-image: url('../../icon/Icon-Phone-call.svg');
+    background-image: url('/src/icon/Icon-Phone-call.svg');
   }
 
   &--menu {
-    background-image: url('../../icon/Icon-Burger-menu.svg');
-    @include hover(background-image, url('../../icon/Icon-Burger-menu-hover.svg'));
+    background-image: url('/src/icon/Icon-Burger-menu.svg');
+    @include hover(background-image, url('/src/icon/Icon-Burger-menu-hover.svg'));
   }
 
   &--close {
-    background-image: url('../../icon/Icon-Close.svg');
+    background-image: url('/src/icon/Icon-Close.svg');
   }
 }
