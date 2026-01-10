@@ -8,17 +8,17 @@
   background-size: cover;
 
   &--phone {
-    background-image: url('/icon/Icon-Phone-call.svg');
+    background-image: url('./public/icon/Icon-Phone-call.svg');
   }
 
   &--menu {
-    background-image: url('/icon/Icon-Burger-menu.svg');
+    background-image: url('./public/icon/Icon-Burger-menu.svg');
 
-    @include hover(background-image, url('/icon/Icon-Burger-menu-hover.svg'));
+    @include hover(background-image, url('./public/icon/Icon-Burger-menu-hover.svg'));
   }
 
   &--close {
-    background-image: url('/icon/Icon-Close.svg');
+    background-image: url('./public/icon/Icon-Close.svg');
   }
 
   @media (min-width: $tablet-min-width) {
