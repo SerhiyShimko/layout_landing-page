@@ -46,7 +46,6 @@
 
   &__textarea {
     gap: 10px;
-
     box-sizing: border-box;
     width: 100%;
     height: 148px;
@@ -54,6 +53,7 @@
     padding: 14px 16px;
     border: 0;
     border-radius: 8px;
+    resize: none;
 
     background-color: #F9F9F9;
 
@@ -78,7 +78,6 @@
     border-radius: 8px;
 
     color: #FFF;
-    text-decoration: none;
 
     background-color: #1B2129;
 
@@ -92,6 +91,10 @@
 
   }
 
+  &--margin {
+    margin-bottom: 24px;
+  }
+
   &__inf-title {
     margin: 0;
     margin-bottom: 8px;
@@ -103,14 +106,22 @@
 
   &__inf-content {
     margin: 0;
-    margin-bottom: 24px;
 
     font-size: 16px;
     font-weight: 400;
     color: #191919;
   }
+
+
+  &--margin a {
+    text-decoration: none;
+
+    @include hover(color, rgb(76, 89, 241));
+
+  }
+
 }
 
-a {
+.link {
   text-decoration: none;
 }
