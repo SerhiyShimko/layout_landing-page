@@ -355,15 +355,18 @@
 .about-us__title {
   grid-column: span 2;
   margin: 0;
+  margin-bottom: 24px;
 }
 @media (min-width: 576px) {
   .about-us__title {
     grid-column: 1/4;
+    margin: 0;
   }
 }
 @media (min-width: 1024px) {
   .about-us__title {
     grid-column: 1/7;
+    margin: 0;
   }
 }
 .about-us__description {
@@ -452,6 +455,9 @@
 }
 
 .button__categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   color: #fff;
   box-sizing: border-box;
@@ -499,8 +505,10 @@
 }
 .button__link {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+}
+.button__text {
+  grid-column: 1/-1;
+  text-align: center;
   align-items: center;
 }
 

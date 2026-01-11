@@ -1,5 +1,8 @@
 .button {
   &__categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     color: #fff;
 
@@ -40,8 +43,11 @@
 
   &__link {
     text-decoration: none;
-    display: flex;
-    justify-content: center;
+  }
+
+  &__text {
+    grid-column: 1/-1;
+    text-align: center;
     align-items: center;
   }
 }
