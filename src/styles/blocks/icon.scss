@@ -8,8 +8,29 @@
   background-size: cover;
 
   &--phone {
+    position: relative;
+    display: flex;
+    align-items: center;
     background-image: url('./public/icon/Icon-Phone-call.svg');
+
+    &::before {
+      content: '+1 234 5555-55-55';
+      position: absolute;
+      transform: translateX(-150px);
+      display: block;
+      color: $main-text-color;
+      width: max-content;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::before {
+        opacity: 1;
+      }
+
   }
+
 
   &--menu {
     background-image: url('./public/icon/Icon-Burger-menu.svg');

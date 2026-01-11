@@ -6,6 +6,10 @@
   line-height: 140%;
   color: $main-text-color;
 
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
   &__body {
     min-width: 320px;
     margin: 0;

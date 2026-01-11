@@ -34,6 +34,9 @@
   line-height: 140%;
   color: #1b2129;
 }
+.page:has(.page__menu:target) {
+  overflow: hidden;
+}
 .page__body {
   min-width: 320px;
   margin: 0;
@@ -125,7 +128,24 @@
   background-size: cover;
 }
 .icon--phone {
+  position: relative;
+  display: flex;
+  align-items: center;
   background-image: url("./public/icon/Icon-Phone-call.svg");
+}
+.icon--phone::before {
+  content: "+1 234 5555-55-55";
+  position: absolute;
+  transform: translateX(-150px);
+  display: block;
+  color: #1b2129;
+  width: max-content;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.icon--phone:hover::before {
+  opacity: 1;
 }
 .icon--menu {
   background-image: url("./public/icon/Icon-Burger-menu.svg");
@@ -599,6 +619,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 100%;
   height: 56px;
   margin-bottom: 48px;
@@ -615,6 +636,12 @@
   .contact-us__button {
     margin-bottom: 120px;
   }
+}
+.contact-us__button {
+  transition: background-color 0.3s;
+}
+.contact-us__button:hover {
+  background-color: rgb(7, 11, 28);
 }
 .contact-us--margin {
   margin-bottom: 24px;
